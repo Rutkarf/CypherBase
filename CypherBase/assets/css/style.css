@@ -1,0 +1,229 @@
+/* Appliquer le fond au conteneur principal du site */
+body {
+    background-image: url('../upload/background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px; /* Taille du texte en pixels */
+}
+
+.NavbarLienGauche {
+    order: 1;
+    list-style: none; /* Supprimer les puces */
+    
+}
+
+.NavbarLienGauche a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: white; /* Couleur du texte des liens */
+}
+
+.NavbarLienMillieux {
+    order: 2;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement les liens */
+    align-items: center; /* Centrer verticalement les liens */
+    list-style: none; /* Supprimer les puces */
+    gap: 1cm; /* Espacement entre les liens */
+}
+
+.NavbarLienMillieux a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: white; /* Couleur du texte des liens */
+}
+
+.NavbarLienDroite {
+    order: 3;
+    position: relative;
+}
+
+.NavbarLienDroite li {
+    display: block;
+    margin-bottom: 10px;
+    list-style: none; /* Supprimer les puces */
+}
+
+.NavbarLienDroite li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: white; /* Couleur du texte des liens */
+}
+
+.NavbarLienDroite ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+.navbar li a {
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar li a:hover {
+    color: #ff0000;
+}
+
+
+
+/*DEBUT DE STYLE POUR <h1>*/
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+main h1, main p {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+
+
+
+/*FIN DE STYLE POUR <h1>*/
+
+/*DEBUT DE STYLE POUR "<p> page d'accueil" */
+p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px; /* Taille du texte en pixels */
+}
+/*FIN DE STYLE POUR '<p> page d'accueil" */
+
+
+
+/* CSS styles for the footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  footer img.drop {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    animation-name: logo-appear;
+    animation-duration: 1s;
+  }
+
+  
+  @keyframes logo-appear {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+/* Styles pour le formulaire de connexion */
+.form-container {
+  margin-top: 5rem;
+  max-width: 400px; /* Optionnel : Limite la largeur du formulaire */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  width: 50%; /* Champs du formulaire occupe la moitié de la page */
+}
+
+.form-label {
+  font-weight: bold;
+  color: white;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem; /* Ajustez le padding selon vos préférences */
+  font-size: 0.875rem; /* Ajustez la taille de police selon vos préférences */
+}
+
+.small-error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.checkbox-container {
+  margin-top: 1.5rem;
+  width: 50%; /* Champs du formulaire occupe la moitié de la page */
+}
+
+.submit-button {
+  padding: 0.75rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 50%; /* Champs du formulaire occupe la moitié de la page */
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Styles pour le formulaire d'inscription */
+.form-container.signup {
+  margin-top: 5rem;
+  max-width: 400px; /* Optionnel : Limite la largeur du formulaire */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container.signup .form-group,
+.form-container.signup .checkbox-container {
+  width: 100%; /* Champs du formulaire occupe toute la largeur */
+}
+
+.form-container.signup .submit-button {
+  width: 100%; /* Champs du formulaire occupe toute la largeur */
+}
+
+
+/* GESTION ADMIN */
+  .table {
+    color: white;
+  }
+
+  .table th {
+    color: white;
+  }
